@@ -11,9 +11,9 @@ public class PubSubIngestTest {
     @Test
     public void testFunction() throws Exception {
         PubSubMessage p = new PubSubMessage();
-        p.setData("TEST");
+        p.setData("VGhpcyBpcyB0aGUgbWVzc2FnZSBkYXRh");
         function = new PubSubIngest().ingest();
         this.function.accept(p);
     }
-    
+
 }
